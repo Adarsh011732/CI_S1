@@ -26,10 +26,10 @@ jobs:
           run: sudo apt-get install -y jq
         - name: Create file
           run: |
-           echo'{
+           echo '{
             "name":"Adarsh Singh",
             "course":"CSE",
-            "profession":"Student"}'>report.json 
+            "profession":"Student"}' >report.json 
         - name: read value using jq
           run: |
             jq'.name' report.json
