@@ -32,7 +32,7 @@ jobs:
             "profession":"Student"}' >report.json 
         - name: read value using jq
           run: |
-            jq'.name' report.json
+            jq '.name' report.json
         - name: Print tool version
           run: |
             echo "version of jq: $(jq --version)"
