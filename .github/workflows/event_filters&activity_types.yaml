@@ -1,0 +1,13 @@
+name: Event Filters /7 Activity Types
+on:
+    pull_request:
+        types: opened
+        branches:
+            -main
+
+jobs:
+    echo:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Print message
+              run: echo "PR opened in main branch"  
